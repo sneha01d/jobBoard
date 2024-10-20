@@ -1,0 +1,214 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    height: 800ppx;
+    margin: 0 auto;
+}
+/* Header */
+header {
+    background-color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+}
+
+job-list{
+    display:flex;
+    flex-direction: row;
+}
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin-left: 20px; /* Add some spacing between logo and nav */
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.auth-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto; /* Push buttons to the far right */
+}
+
+.auth-buttons .btn {
+    margin-left: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+.auth-buttons .btn.primary {
+    background-color: #f0a500;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #005c99;
+    color: #fff;
+    padding: 60px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Wrap content for small screens */
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* Allow wrapping if necessary */
+}
+
+.search-bar input {
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+    border-radius: 5px;
+    border: none;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #f0a500;
+    border: none;
+    border-radius: 5px;
+}
+
+.hero-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Job Categories Section */
+.job-categories {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.job-categories h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.job-category-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Make it responsive for smaller screens */
+    gap: 20px;
+}
+
+.job-category-item {
+    background-color: #fff;
+    padding: 20px;
+    width: 30%;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.job-category-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.job-category-item p {
+    font-size: 16px;
+    color: #666;
+}
+
+.job-category-item span {
+    font-size: 14px;
+    color: #999;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer p {
+    margin-top: 10px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .hero-text {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .job-category-item {
+        width: 45%; /* Stack in two columns on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+    }
+
+    .auth-buttons {
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    .job-category-item {
+        width: 100%; /* Stack items vertically on very small screens */
+    }
+}

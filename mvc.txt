@@ -1,0 +1,45 @@
+project-root/
+│
+├── /controllers
+│   ├── authController.js         # Handles registration, login, JWT verification
+│   ├── userController.js         # Handles user profile operations (CRUD)
+│   ├── jobController.js          # Handles job posting and job search operations
+│   └── applicationController.js  # Handles job applications (apply, review)
+│
+├── /models
+│   ├── userModel.js              # Mongoose schema for user registration and profiles
+│   ├── jobModel.js               # Mongoose schema for job postings
+│   └── applicationModel.js       # Mongoose schema for job applications
+│
+├── /views
+│   ├── sigup.pug                 # User sigup form
+│   ├── signin.pug                 # User signin form
+│   ├── dashboard.pug             # User dashboard displaying job postings and profile info
+│   ├── jobDetails.pug            # Detailed view of a job posting
+│   ├── profile.pug               # User profile view and update form
+│   ├── apply.pug                 # Job application form
+│   └── error.pug                 # Error handling view
+│
+├── /routes
+│   ├── authRoutes.js             # Routes for registration, login, logout
+│   ├── userRoutes.js             # Routes for fetching, updating, deleting user profiles
+│   ├── jobRoutes.js              # Routes for creating, updating, searching job postings
+│   └── applicationRoutes.js      # Routes for applying to jobs, reviewing applications
+│
+├── /middlewares
+│   └── authMiddleware.js         # JWT token verification middleware for protected routes
+│
+├── /public
+│   ├── /css
+│   │   └── styles.css            # CSS file for styling the frontend
+│   └── /js
+│       └── script.js             # Client-side validation and form handling
+│
+├── /config
+│   └── db.js                     # MongoDB connection setup using Mongoose
+│
+├── /uploads                      # Directory for storing uploaded files (e.g., resumes)
+│
+├── app.js                        # Express app setup and configuration
+├── package.json                  # Project dependencies and scripts
+└── .env                          # Environment variables for JWT secret, API keys, DB URL

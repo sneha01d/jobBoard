@@ -1,0 +1,135 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #005c99, #f0a500);
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.auth-buttons .btn {
+    margin-left: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+.auth-buttons .btn.primary {
+    background-color: #f0a500;
+}
+
+/* Companies Section */
+.companies-section {
+    padding: 60px 0;
+    color: white;
+    text-align: center;
+}
+
+.companies-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.companies-section p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+/* Company Grid */
+.company-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.company-item {
+    background-color: rgba(255, 255, 255, 0.9); /* White with slight transparency */
+    color: #333;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 300px; /* Fixed width for consistency */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.company-item:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.company-item h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.company-item p {
+    margin: 5px 0;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #005c99;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #004080; /* Darker shade on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px; /* Add margin for separation */
+}
+
+footer p {
+    margin-top: 10px;
+}

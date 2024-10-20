@@ -1,0 +1,99 @@
+/* Reset some default styles */
+body, h1, p, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #e2f0cb 0%, #b1e7e2 100%); /* Gradient background */
+    color: #333; /* Dark text color for readability */
+}
+
+/* Sign Up Section */
+.signup-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    padding: 20px;
+}
+
+.signup-section .container {
+    background-color: white; /* White background for form */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    width: 100%;
+    max-width: 400px; /* Limit the width of the form */
+    text-align: center; /* Center-align text */
+}
+
+.signup-section h1 {
+    margin-bottom: 10px; /* Spacing below heading */
+    color: #007bff; /* Primary color for the heading */
+}
+
+.signup-section p {
+    margin-bottom: 20px; /* Space between paragraphs */
+    font-size: 14px; /* Slightly smaller font for descriptive text */
+}
+
+/* Form Styles */
+.signup-form {
+    display: flex; /* Flexbox for form layout */
+    flex-direction: column; /* Vertical stacking */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Spacing between form groups */
+    text-align: left; /* Align labels to the left */
+}
+
+label {
+    display: block; /* Block display for labels */
+    margin-bottom: 5px; /* Spacing below labels */
+    font-weight: bold; /* Bold for emphasis */
+}
+
+input {
+    width: 100%; /* Full width input fields */
+    padding: 10px; /* Padding inside input fields */
+    border: 1px solid #ccc; /* Light border for inputs */
+    border-radius: 5px; /* Rounded corners */
+    transition: border-color 0.3s; /* Smooth transition for focus effect */
+}
+
+input:focus {
+    border-color: #007bff; /* Blue border on focus */
+    outline: none; /* Remove default outline */
+}
+
+.btn {
+    width: 100%; /* Full width button */
+    padding: 10px; /* Padding for button */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    color: white; /* White text color */
+    font-weight: bold; /* Bold text for buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.btn.primary {
+    background-color: #007bff; /* Primary button color */
+}
+
+.btn.primary:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Link Styles */
+a {
+    color: #007bff; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover for clarity */
+}

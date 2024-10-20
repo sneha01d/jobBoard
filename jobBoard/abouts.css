@@ -1,0 +1,61 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* About Section */
+.about-section {
+    background-color: #f4f4f4;
+    padding: 60px 0;
+}
+
+.about-section .container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.about-section h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.about-section h2 {
+    font-size: 28px;
+    color: #005c99;
+    margin-bottom: 15px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin-top: 10px;
+    color: #fff;
+}
